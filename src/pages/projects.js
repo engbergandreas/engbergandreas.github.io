@@ -1,42 +1,65 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-import { displayGenres } from '../Components/utilities'
+//import { displayGenres } from '../Components/utilities'
+import imageholder from '../images/placeholder1024.png'
 
-function projects() {
+
+const CATEGORIES = ['SHOW ALL', 'GAMES', 'COMPUTER GRAPHICS', 'PROGRAMMING', 'WEBB'];
+
+
+function Projects({ selectedCat, onChangeFunction, projects }) {
+    //const [projectsToShow, setProjectsToShow] = useState(PROJECTS);
+
+    function filterProjectSelection(category) {
+        onChangeFunction(category);
+        //const filteredProjects = PROJECTS.filter(project => project.categories.includes(category.toLowerCase()));
+        //category === 'SHOW ALL' ? setProjectsToShow(PROJECTS) : setProjectsToShow(filteredProjects);
+    }
+    function DisplayCategories() {
+        return (
+            <div className={'flexWrapper'} style={{ display: 'flex', justifyContent: 'space-evenly' }}>
+                {
+                    CATEGORIES.map((i, index) => (
+                        <button key={index} className={i === selectedCat ? 'activeCategory category' : 'category'}
+                            onClick={() => onChangeFunction(i)}
+                        >
+                            {i}
+                        </button >
+                    ))
+                }
+            </div >
+        );
+    }
+
     return (
         <div>
             <h1>From projects </h1>
-            {displayGenres()}
+            <DisplayCategories />
             <div className="projectsWrapper">
-                {PROJECTS.map(i => (
-                    <Link
-                        key={i.id}
-                        to={{
-                            pathname: `/projects/${i.id}`
-                        }}
+                {projects.map(i => (
+                    //Creates a relative link to all the different projects using its ID
+                    <Link key={i.id} to={{
+                        pathname: `/projects/${i.id}`
+                    }}
                     >
-                        <ProjectThumbnail title={i.title} />
+                        <ProjectThumbnail title={i.title} backgroundImage={i.image} />
                     </Link>
+
                 ))}
             </div>
+            <img src={imageholder} alt=''></img>
+            <img src={imageholder} alt=''></img>
         </div>
     );
 }
 
-export default projects;
+export default Projects;
 
-const PROJECTS = [
-    { id: 'proj1', title: 'project1', genres: ['games', 'programming'] },
-    { id: 'another_proj', title: 'another project', genres: ['games'] },
-    { id: 'proj_3', title: 'proj_3', genres: ['programming'] },
-    { id: 'proj_4', title: 'proj_4', genres: ['webb'] },
-    { id: 4, title: 'yet another longer project name', genres: [] }
-];
-console.log(PROJECTS);
+function ProjectThumbnail({ title, backgroundImage }) {
+    let style = { background: backgroundImage ? backgroundImage : 'gray' }
 
-function ProjectThumbnail({ title }) {
     return (
-        <div className="projectsWrapperChild">
+        <div className="project" style={style}>
             {title}
         </div>
     );
