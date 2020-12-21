@@ -1,0 +1,62 @@
+[
+    {
+        "id": "project1",
+        "title": "project_games+programming",
+        "background": " ",
+        "categories": [
+            "games",
+            "programming"
+        ]
+    },
+    {
+        "id": "another_game",
+        "title": "another game project",
+        "categories": [
+            "games"
+        ]
+    },
+    {
+        "id": "a programming project",
+        "title": "a programming project",
+        "categories": [
+            "programming"
+        ]
+    },
+    {
+        "id": "web",
+        "title": "a web project",
+        "categories": [
+            "webb"
+        ]
+    },
+    {
+        "id": "4",
+        "title": "yet another longer project name",
+        "categories": [
+            "computer graphics"
+        ]
+    },
+    {
+        "id": "5",
+        "title": "webb + programming",
+        "categories": [
+            "webb",
+            "programming"
+        ]
+    },
+    {
+        "id": "6",
+        "title": "games + computer grpah",
+        "categories": [
+            "games",
+            "computer graphics"
+        ]
+    },
+    {
+        "id": "7",
+        "title": "last game project",
+        "categories": [
+            "games"
+        ]
+    }
+]
