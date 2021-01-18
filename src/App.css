@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+a {
+    text-decoration: none;
+    color: gray;
+}
 
 .wrapper {
     display: flex;
@@ -25,14 +29,39 @@
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
+.projectsWrapperChild {
+    flex: 0 0 21%;
+    margin: 7px 0;
+}
 
 .project {
-    height: 250px;
-    width: 250px;
-    border: 1px solid black;
+    height: 300px;
+    min-width: 300px;
+    max-width: 440px;
+    border: 1px solid rgb(250, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+.project span {
+    visibility: hidden;
+    font-size: 30px;
+    font-weight: 600;
+    opacity: 0;
+    transition: opacity 1.5s;
 }
 .project:hover {
-    background: green;
+}
+.project:hover span {
+    visibility: visible;
+    color:white;
+    opacity: 1;
+
 }
 .category {
     height: 50;
