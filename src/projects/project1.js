@@ -1,7 +1,7 @@
 import React from 'react'
 import BackButton from '../Components/BackToProjects'
-import Placeholder1024 from '../images/placeholder1024.png'
-import Placeholder640 from '../images/placeholder640.png'
+// import Placeholder1024 from '../images/placeholder1024.png'
+// import Placeholder640 from '../images/placeholder640.png'
 
 
 function Project1() {
@@ -15,7 +15,7 @@ function Project1() {
                 is all about. After this perhaps an image or two would be a good idea. I will also need
                 to come up with some more info so that this paragrahp actually has some length.
                 </p>
-                <img src={Placeholder1024} alt=''></img>
+                {/*<img src={Placeholder1024} alt=''></img>*/}
 
                 <p>then after an image we have some more text to explain something else about the project, which can also include some maths
                 or w/e is nessesary. Lorem Ipsum is simply dummy text of the printing and typesetting industry.
@@ -23,7 +23,7 @@ function Project1() {
                 a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
                 </p>
 
-                <img src={Placeholder640} alt='' />
+                {/* <img src={Placeholder640} alt='' /> */}
             </div>
             <BackButton />
         </div>

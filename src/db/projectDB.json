@@ -1,8 +1,8 @@
 [
     {
         "id": "project1",
-        "title": "project_games+programming",
-        "background": " ",
+        "title": "project_games + programming",
+        "backgroundURL": "/images/placeholder250.png",
         "categories": [
             "games",
             "programming"
@@ -11,6 +11,7 @@
     {
         "id": "another_game",
         "title": "another game project",
+        "backgroundURL": "/images/placeholder250.png",
         "categories": [
             "games"
         ]
@@ -18,6 +19,7 @@
     {
         "id": "a programming project",
         "title": "a programming project",
+        "backgroundURL": "/images/placeholder250.png",
         "categories": [
             "programming"
         ]
@@ -25,6 +27,7 @@
     {
         "id": "web",
         "title": "a web project",
+        "backgroundURL": "/images/placeholder640.png",
         "categories": [
             "webb"
         ]
@@ -32,6 +35,7 @@
     {
         "id": "4",
         "title": "yet another longer project name",
+        "backgroundURL": "/images/placeholder250.png",
         "categories": [
             "computer graphics"
         ]
@@ -39,6 +43,7 @@
     {
         "id": "5",
         "title": "webb + programming",
+        "backgroundURL": "/images/placeholder250.png",
         "categories": [
             "webb",
             "programming"
@@ -47,6 +52,7 @@
     {
         "id": "6",
         "title": "games + computer grpah",
+        "backgroundURL": "/images/placeholder250.png",
         "categories": [
             "games",
             "computer graphics"
@@ -55,6 +61,7 @@
     {
         "id": "7",
         "title": "last game project",
+        "backgroundURL": "/images/placeholder1024.png",
         "categories": [
             "games"
         ]

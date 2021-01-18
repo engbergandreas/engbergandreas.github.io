@@ -1,11 +1,18 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 //import { displayGenres } from '../Components/utilities'
-import imageholder from '../images/placeholder1024.png'
+//import imageholder from '/images/placeholder1024.png'
 
 
 const CATEGORIES = ['SHOW ALL', 'GAMES', 'COMPUTER GRAPHICS', 'PROGRAMMING', 'WEBB'];
 
+{/*const Img = styled.div`
+    color: red;
+
+    :hover {
+        background-color: green;
+    }
+`*/}
 
 function Projects({ selectedCat, onChangeFunction, projects }) {
     //const [projectsToShow, setProjectsToShow] = useState(PROJECTS);
@@ -38,29 +45,31 @@ function Projects({ selectedCat, onChangeFunction, projects }) {
             <div className="projectsWrapper">
                 {projects.map(i => (
                     //Creates a relative link to all the different projects using its ID
-                    <Link key={i.id} to={{
+                    <Link className="projectsWrapperChild" key={i.id} to={{
                         pathname: `/projects/${i.id}`
                     }}
                     >
-                        <ProjectThumbnail title={i.title} backgroundImage={i.image} />
+                        <ProjectThumbnail title={i.title} backgroundImg={i.backgroundURL} />
                     </Link>
+                    
 
                 ))}
             </div>
-            <img src={imageholder} alt=''></img>
-            <img src={imageholder} alt=''></img>
         </div>
     );
 }
 
 export default Projects;
 
-function ProjectThumbnail({ title, backgroundImage }) {
-    let style = { background: backgroundImage ? backgroundImage : 'gray' }
+function ProjectThumbnail({ title, backgroundImg }) {
+    let style = { backgroundImage: `url(${backgroundImg})`, backgroundColor: '#ececec' }
+    //<img src={require('../images/placeholder250.png')}></img>
+    let url = backgroundImg;
 
     return (
         <div className="project" style={style}>
-            {title}
+            <span>{title}</span>
+            {/* <img src={require('../images/placeholder250.png')} /> */}
         </div>
     );
 }
