@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import './App.css';
 import Header from './pages/header';
+import Footer from './pages/footer';
 import { Route, Switch } from 'react-router-dom';
 import Projects from './pages/projects'
 import Portfolio from './pages/portfolio'
@@ -17,6 +18,7 @@ function App() {
   const [projectsToShow, setProjectsToShow] = useState(projects);
 
 
+  //filter projects based on category 
   const onSelectedCategoryChange = (category) => {
     setSelectedCategory(category);
     const filteredProjects = projects.filter(project => project.categories.includes(category.toLowerCase()));
@@ -41,6 +43,7 @@ function App() {
         <Route component={Error} />
 
       </Switch>
+      <Footer />
     </div >
   );
 }
