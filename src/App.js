@@ -8,8 +8,9 @@ import Portfolio from './pages/portfolio'
 import About from './pages/about'
 import Home from './pages/home'
 import Error from './pages/error'
-import project1 from './projects/project1'
 import projects from './db/projectDB.json'
+/*NEW PROJECT: Import project js file */ 
+import cloth from './projects/cloth_simulation'
 
 
 
@@ -31,12 +32,11 @@ function App() {
       <Switch>
 
         <Route path="/portfolio" component={Portfolio}></Route>
-        <Route path="/projects/project1" component={project1}></Route>
-
-        <Route path="/projects" //component={Projects} selectedCat={selectedCategory}
-        // onChangeFunction={onSelectedCategoryChange}>
-        >
-          <Projects selectedCat={selectedCategory} onChangeFunction={onSelectedCategoryChange} projects={projectsToShow} />
+        
+        {/*NEW PROJECT: Add new projects link must match project id */}
+        <Route path="/projects/cloth_simulation" component={cloth}></Route>
+        <Route path="/projects">
+          <Projects selectedCat={selectedCategory} onClickFunction={onSelectedCategoryChange} projects={projectsToShow} />
         </Route>
         <Route path="/about" component={About}></Route>
         <Route exact path="/" component={Home}></Route>
