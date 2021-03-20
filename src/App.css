@@ -1,16 +1,48 @@
 * {
     box-sizing: border-box;
 }
+body {
+    height: 100%;
+    position: relative;
+}
 
 a {
     text-decoration: none;
     color: gray;
 }
-
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+#root {
+    min-height: 100vh;
+    overflow: hidden;
+    display: block;
+    position: relative;
+    padding-bottom: 100px; /*same height as footer */ 
+}
 .wrapper {
     display: flex;
-    height: 85px;
-    background-color: red;
+    height: 100px;
+    background-color: rgb(8, 6, 39);
+    font-size: 1.5em;
+}
+/*whacky code, selects all children apply css*/
+.wrapper > .wrapperChild {
+    padding-left: 20px;
+    min-width: 125px;
+    flex-basis: 70%;
+}
+/*select all children except the first one unset the css*/
+.wrapper > .wrapperChild ~.wrapperChild {
+    flex-basis: 10%;
+    min-width: unset;
+    padding-left: unset;
+    justify-content: center;
 }
 
 .wrapperChild {
@@ -18,7 +50,9 @@ a {
     display: flex;
     align-items: center;
 }
-
+.wrapperChild:hover {
+    border: white dashed 1px;
+}
 
 .activePage {
     color: gainsboro;
@@ -46,27 +80,76 @@ a {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    
+    position: relative;
 }
+
 .project span {
+    padding: 0 5px;
     visibility: hidden;
     font-size: 30px;
     font-weight: 600;
     opacity: 0;
-    transition: opacity 1.5s;
+    transition: opacity .7s;
+    
 }
-.project:hover {
+.project::before {
+    content: "";
+    background: rgba(255, 255, 255, 0);
+    transition: background .3s;
+
 }
+.project:hover::before {
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.3);
+}
+
 .project:hover span {
     visibility: visible;
     color:white;
     opacity: 1;
-
 }
+.projectTitleInfo {
+    text-align: center;
+    margin: 5vh 0;
+}
+.projectTitleInfo h1,h2 {
+    margin: 0;
+}
+
+.projectInfo {
+    width: 70vw;
+    margin: 0 auto;
+}
+.projectInfo p {
+    text-align: justify;
+}
+.projectBackButton {
+    display: flex;
+    justify-content: center;
+    margin: 16px 0;
+}
+.projectBackButton div {
+    height: 50px;
+    display: inline-flex;
+    align-items: center;
+    padding: 0 5px;
+    border: 1px solid black;
+}
+.projectBackButton div:hover{
+    background: #ac7676;
+}
+
+
 .category {
-    height: 50;
-    display: 'flex';
-    align-items: 'center';
+    height: 50px;
+    width: 200px;
+    display: flex;
+    align-items: center;
     border: 1px solid black;
     cursor: pointer;
 }
