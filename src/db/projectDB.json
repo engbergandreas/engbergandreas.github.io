@@ -1,10 +1,10 @@
 [
     {
-        "id": "project1",
-        "title": "project_games + programming",
-        "backgroundURL": "/images/placeholder250.png",
+        "id": "cloth_simulation",
+        "title": "Cloth Simulation",
+        "backgroundURL": "/images/cloth/clothflag.png",
         "categories": [
-            "games",
+            "webb",
             "programming"
         ]
     },
@@ -60,6 +60,14 @@
     },
     {
         "id": "7",
+        "title": "last game project",
+        "backgroundURL": "/images/placeholder1024.png",
+        "categories": [
+            "games"
+        ]
+    },
+    {
+        "id": "8",
         "title": "last game project",
         "backgroundURL": "/images/placeholder1024.png",
         "categories": [
