@@ -5,25 +5,29 @@ const Container = styled.div `
 display: flex;
 flex-wrap: wrap;
 justify-content: center;
+margin: 15px 0;
 `
 
 const Button = styled.div `
-border: 1px solid black;
+border: 2px solid #3C403D;
 height: 60px;
 width: 110px;
 margin: 0 5px;
 display: inline-flex;
 justify-content: center;
 align-items: center;
-margin: 20px 5px 0 5px;
+color: #3C403D;
+font-size: larger;
+font-weight: 600;
 
 &:hover {
-    background: #cecece;
+    background: rgba(0,0,0,0.25);
+    color: #fff;
 }
 `
 
 
-function DemoCodeInfo({demo, code}) {
+function DemoCodeLinks({demo, code}) {
     return (
         <Container>
             <Button as="a" href={demo} target="_blank">Demo</Button>
@@ -33,4 +37,4 @@ function DemoCodeInfo({demo, code}) {
     )
 }
 
-export default DemoCodeInfo
+export default DemoCodeLinks

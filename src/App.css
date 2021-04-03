@@ -10,69 +10,71 @@ a {
     text-decoration: none;
     color: gray;
 }
-footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    color: white;
-    justify-content: center;
-    align-items: center;
-}
 #root {
     min-height: 100vh;
     overflow: hidden;
     display: block;
     position: relative;
-    padding-bottom: 100px; /*same height as footer */ 
+    padding-bottom: max(100px, 10vh); /*same height as footer */
+    --gap: 100px;
+     
 }
 .wrapper {
     display: flex;
-    height: 100px;
-    background-color: rgb(8, 6, 39);
+    height: 10vh;
+    min-height: 100px;
     font-size: 1.5em;
+    /* background: #dfe4de; */
+    box-shadow: inset 0 -2px 5px 0px #3c403d;
+
 }
 /*whacky code, selects all children apply css*/
 .wrapper > .wrapperChild {
-    padding-left: 20px;
-    min-width: 125px;
-    flex-basis: 70%;
+    min-width: 215px;
+    margin-right: auto;
 }
 /*select all children except the first one unset the css*/
 .wrapper > .wrapperChild ~.wrapperChild {
-    flex-basis: 10%;
     min-width: unset;
-    padding-left: unset;
-    justify-content: center;
+    margin-right: unset;
 }
-
+/*Css that applies to all children*/
 .wrapperChild {
-    background-color: rgb(223, 67, 20);
     display: flex;
     align-items: center;
+    justify-content: center;
+    color: #3C403D;
+    width: 125px;
+    
 }
 .wrapperChild:hover {
-    border: white dashed 1px;
+    background:rgba(0, 0, 0, .25)
 }
 
 .activePage {
-    color: gainsboro;
+    color: #fff;
 }
 
 .projectsWrapper {
     display:flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    padding-bottom: 50px;
 }
 .projectsWrapperChild {
     flex: 0 0 21%;
-    margin: 7px 0;
+    margin: 10px 0;
+    padding: 10px;
+    background: #fff;
+    box-shadow: 2px 1px 12px 1px #000000de;
+
 }
 
 .project {
     height: 300px;
     min-width: 300px;
     max-width: 440px;
-    border: 1px solid rgb(250, 0, 0);
+    margin: 0 auto; /*for really big screens*/
     display: flex;
     align-items: center;
     justify-content: center;
@@ -105,7 +107,7 @@ footer {
     bottom: 0;
     left: 0;
     right: 0;
-    background: rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.25);
 }
 
 .project:hover span {
@@ -122,37 +124,86 @@ footer {
 }
 
 .projectInfo {
-    width: 70vw;
+    width: 65vw;
     margin: 0 auto;
 }
 .projectInfo p {
     text-align: justify;
 }
-.projectBackButton {
-    display: flex;
-    justify-content: center;
-    margin: 16px 0;
-}
-.projectBackButton div {
-    height: 50px;
-    display: inline-flex;
-    align-items: center;
-    padding: 0 5px;
-    border: 1px solid black;
-}
-.projectBackButton div:hover{
-    background: #ac7676;
-}
-
 
 .category {
     height: 50px;
     width: 200px;
     display: flex;
     align-items: center;
-    border: 1px solid black;
+    justify-content: center;
+    /* border: 2px solid #3C403D; */
+    border: 0;
     cursor: pointer;
+    color: #fff;
+    background: unset;
+    font-weight: bolder;
+    margin:5px;
+
+}
+.category:hover {
+    background: rgb(0, 0, 0, 0.25);
+    color: #fff;
+    /* border: 2px solid #fff; */
+}
+
+.buttonAnimation {
+    position: relative;
+    vertical-align: middle;
+}
+.buttonAnimation::before,.buttonAnimation::after {
+    box-sizing: inherit;
+    content: "";
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    border:2px solid transparent;
+
+}
+.buttonAnimation::before {
+    /*Covers top and right border*/
+    top: 0;
+    left: 0;
+    border-top-color: #fff;
+    width:20px;
+}
+.buttonAnimation::after {
+    /*Covers bottom and left border*/
+    bottom: 0;
+    right: 0;
+    border-bottom-color:#fff;
+    width: 20px;
+}
+
+.buttonAnimation:hover::before, .buttonAnimation:hover::after {
+    width: 100%;
+    height: 100%;
+}
+.buttonAnimation:hover::before {
+    border-top-color: #fff;
+    border-right-color: #fff;
+    transition:
+        width 0.25s ease-out,
+        height 0.25s ease-out 0.25s;
+}
+.buttonAnimation:hover::after {
+    border-bottom-color: #fff;
+    border-left-color: #fff;
+    transition:
+        /*border-color 0s ease-out 0.5s,*/
+        width 0.25s ease-out, height 0.25s ease-out 0.25s;
+}
+
+.category:focus {
+    outline: none;
 }
 .activeCategory {
-    background: red;
+    color: #fff;
+    border-color: #fff;
+    border: 2px solid #fff;
 }

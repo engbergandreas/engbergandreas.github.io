@@ -1,10 +1,15 @@
 import React from 'react'
+import styled from 'styled-components'
+
+const StyledMain = styled.div `
+    padding-top: var(--gap);
+` 
 
 function home() {
     return (
-        <h1>
-            From home
-        </h1>
+        <StyledMain>
+        <h1>From home</h1>
+        </StyledMain>
     );
 }
 

@@ -9,10 +9,25 @@ import About from './pages/about'
 import Home from './pages/home'
 import Error from './pages/error'
 import projects from './db/projectDB.json'
+import styled from 'styled-components'
 /*NEW PROJECT: Import project js file */ 
 import cloth from './projects/cloth_simulation'
 
+/* 
+Olive: #A3BCB6
 
+Green Leaf: #39603D
+
+Brown Grey: #3C403D
+
+Tanly: #DADED4
+
+White: #FFFFFF
+*/
+
+const StyledMain = styled.div `
+  
+`
 
 function App() {
   const [selectedCategory, setSelectedCategory] = useState('SHOW ALL');
@@ -27,7 +42,7 @@ function App() {
   }
 
   return (
-    < div >
+    <StyledMain>
       <Header />
       <Switch>
 
@@ -44,7 +59,7 @@ function App() {
 
       </Switch>
       <Footer />
-    </div >
+    </StyledMain>
   );
 }
 

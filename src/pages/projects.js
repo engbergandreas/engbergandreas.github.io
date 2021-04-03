@@ -1,6 +1,20 @@
 import React from 'react'
 import { Link, Route, Switch, useRouteMatch } from 'react-router-dom';
+import styled from 'styled-components'
 
+const StyledMain = styled.div `
+    background: linear-gradient(90deg, #79938d, #496368);
+    min-height: 89vh;
+    padding-top: var(--gap);
+`
+
+const CategoriesWrapper = styled.div `
+    display: flex;
+    justify-content: space-evenly;
+    padding: 50px 0;
+    width: 90%;
+    margin: auto;
+`
 
 
 const CATEGORIES = ['SHOW ALL', 'GAMES', 'COMPUTER GRAPHICS', 'PROGRAMMING', 'WEBB'];
@@ -10,23 +24,22 @@ function Projects({ selectedCat, onClickFunction, projects }) {
 
     function DisplayCategories() {
         return (
-            <div className={'flexWrapper'} style={{ display: 'flex', justifyContent: 'space-evenly' }}>
+            <CategoriesWrapper>
                 {
                     CATEGORIES.map((category, index) => (
-                        <button key={index} className={category === selectedCat ? 'activeCategory category' : 'category'}
+                        <button key={index} className={category === selectedCat ? 'activeCategory category' : 'category buttonAnimation'}
                             onClick={() => onClickFunction(category)}
                         >
                             {category}
                         </button >
                     ))
                 }
-            </div >
+            </CategoriesWrapper >
         );
     }
 
     return (
-        <div>
-            <h1>From projects </h1>
+        <StyledMain>
             <DisplayCategories />
             <div className="projectsWrapper">
                 {projects.map(project => (
@@ -36,7 +49,7 @@ function Projects({ selectedCat, onClickFunction, projects }) {
                     </Link>
                 ))}
             </div>
-        </div>
+        </StyledMain>
     );
 }
 
