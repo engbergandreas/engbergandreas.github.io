@@ -24,9 +24,9 @@ function Footer() {
     return (
         <StyledFooter>
             
-            <a href="https://www.linkedin.com/in/andreas-engberg/"><img src="/images/linkedin.png"></img></a>
-            <a href="https://github.com/engbergandreas"><img src="/images/GitHub.png"></img></a>
-            <a href="mailto:adde.engberg@gmail.com"><img src="/images/mail.png"></img></a>
+            <a href="https://www.linkedin.com/in/andreas-engberg/" target="_blank"><img src="/images/linkedin.png" alt="Linked in"></img></a>
+            <a href="https://github.com/engbergandreas" target="_blank"><img src="/images/GitHub.png" alt="GitHub profile"></img></a>
+            <a href="mailto:adde.engberg@gmail.com" target="_blank"><img src="/images/mail.png" alt="Mail"></img></a>
 
 
         </StyledFooter>
