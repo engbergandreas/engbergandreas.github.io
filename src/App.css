@@ -15,8 +15,9 @@ a {
     overflow: hidden;
     display: block;
     position: relative;
-    padding-bottom: max(100px, 10vh); /*same height as footer */
     --gap: 100px;
+    padding-bottom: max(var(--gap), 10vh); /*same height as footer */
+
      
 }
 .wrapper {
@@ -151,6 +152,14 @@ a {
     color: #fff;
     /* border: 2px solid #fff; */
 }
+.category:focus {
+    outline: none;
+}
+.activeCategory {
+    color: #fff;
+    border-color: #fff;
+    border: 2px solid #fff;
+}
 
 .buttonAnimation {
     position: relative;
@@ -179,7 +188,6 @@ a {
     border-bottom-color:#fff;
     width: 20px;
 }
-
 .buttonAnimation:hover::before, .buttonAnimation:hover::after {
     width: 100%;
     height: 100%;
@@ -195,15 +203,7 @@ a {
     border-bottom-color: #fff;
     border-left-color: #fff;
     transition:
-        /*border-color 0s ease-out 0.5s,*/
-        width 0.25s ease-out, height 0.25s ease-out 0.25s;
+        width 0.25s ease-out,
+        height 0.25s ease-out 0.25s;
 }
 
-.category:focus {
-    outline: none;
-}
-.activeCategory {
-    color: #fff;
-    border-color: #fff;
-    border: 2px solid #fff;
-}
