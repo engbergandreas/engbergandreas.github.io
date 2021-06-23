@@ -10,6 +10,7 @@ margin: 15px 0;
 
 const Button = styled.div `
 border: 2px solid #3C403D;
+/*border: 1px solid #e1e4e8;*/
 height: 60px;
 width: 110px;
 margin: 0 5px;
@@ -21,8 +22,7 @@ font-size: larger;
 font-weight: 600;
 
 &:hover {
-    background: rgba(0,0,0,0.25);
-    color: #fff;
+    background: #f6f8fa;
 }
 `
 

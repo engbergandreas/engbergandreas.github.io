@@ -22,7 +22,7 @@ function ProjectImage({source, description}) {
     
     return (
         <StyledFigure>
-        <Image src={source} alt={description} className="projectImage"/> 
+        <Image src={source} alt={description} /> 
         <Caption>{description}</Caption>
         </StyledFigure>
     )

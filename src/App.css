@@ -49,11 +49,11 @@ a {
     
 }
 .wrapperChild:hover {
-    background:rgba(0, 0, 0, .25)
+    background:rgba(0, 0, 0, .05);
 }
 
 .activePage {
-    color: #fff;
+    color: rgb(129, 0, 0);
 }
 
 .projectsWrapper {
@@ -95,6 +95,7 @@ a {
     transition: opacity .7s;
     
 }
+
 .project::before {
     content: "";
     background: rgba(255, 255, 255, 0);

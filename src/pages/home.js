@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import Projects from './projects'
 
 const StyledMain = styled.div `
     padding-top: var(--gap);
@@ -8,7 +9,6 @@ const StyledMain = styled.div `
 function home() {
     return (
         <StyledMain>
-        <h1>From home</h1>
         </StyledMain>
     );
 }
