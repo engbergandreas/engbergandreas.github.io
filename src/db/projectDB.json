@@ -2,7 +2,7 @@
     {
         "id": "cloth_simulation",
         "title": "Cloth Simulation",
-        "backgroundURL": "/images/cloth/clothflag.png",
+        "backgroundURL": "/images/cloth/clothflag3.png",
         "categories": [
             "webb",
             "programming"
@@ -11,7 +11,7 @@
     {
         "id": "another_game",
         "title": "another game project",
-        "backgroundURL": "/images/placeholder250.png",
+        "backgroundURL": "/images/table_raid/thumbnail.png",
         "categories": [
             "games"
         ]
