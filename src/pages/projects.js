@@ -7,7 +7,7 @@ const StyledMain = styled.div `
     background: #121212;
     min-height: 89vh;
     padding-top: var(--gap);
-`
+`;
 
 const CategoriesWrapper = styled.div `
     display: flex;
@@ -15,7 +15,7 @@ const CategoriesWrapper = styled.div `
     padding: 50px 0;
     width: 90%;
     margin: auto;
-`
+`;
 const ProjectsWrapper = styled.div `
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(375px, 1fr));
@@ -53,7 +53,7 @@ function Projects({ selectedCat, onClickFunction, projects }) {
             <ProjectsWrapper>
                 {projects.map(project => (
                     //Creates a relative link to all the different projects using its ID
-                    <Link className="" key={project.id} to={`${match.url}/${project.id}`}>
+                    <Link className="" style={{padding: "5px", background: "white"}} key={project.id} to={`${match.url}/${project.id}`}>
                         <ProjectThumbnail title={project.title} backgroundImg={project.backgroundURL} />
                     </Link>
                 ))}
@@ -71,10 +71,9 @@ const ProjectContainer = styled.div `
 
     &:before {
         content: "";
-        padding: 0 0px 60% 0;
+        padding: 0 0px 60% 0; /* Adjust height of the cards */ 
         display: block;
     }
-
 `; 
 
 const StyledImg = styled.img `
@@ -82,8 +81,8 @@ const StyledImg = styled.img `
     position: absolute;
     top: 0;
     left: 0;
-    width: calc(100% + 2px);
-    height: calc(100% + 2px);
+    width: 100%;
+    height: 100%;
     object-fit: cover;
 `;
 
@@ -99,12 +98,14 @@ const StyledProjectTitle = styled.div `
     align-items: center;
     text-align: center;
     color: white;
-    font-size: 2em;
-    transition: 0.5s ease;
+    font-size: 2.5em;
+    font-weight: 600;
+    transition: 0.4s ease;
     opacity: 0;
 
     &:hover {
         background: #0714528c;
+        background: #00000061;
         opacity: 1;
     }
 `;
