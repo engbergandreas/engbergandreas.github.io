@@ -9,11 +9,12 @@
         ]
     },
     {
-        "id": "another_game",
-        "title": "another game project",
+        "id": "table_raid",
+        "title": "Table Raid",
         "backgroundURL": "/images/table_raid/thumbnail.png",
         "categories": [
-            "games"
+            "games",
+            "programming"
         ]
     },
     {

@@ -12,6 +12,7 @@ import projects from './db/projectDB.json'
 import styled from 'styled-components'
 /*NEW PROJECT: Import project js file */ 
 import cloth from './projects/cloth_simulation'
+import raid from './projects/table_raid'
 
 /* 
 Olive: #A3BCB6
@@ -50,6 +51,8 @@ function App() {
         
         {/*NEW PROJECT: Add new projects link must match project id */}
         <Route path="/projects/cloth_simulation" component={cloth}></Route>
+        <Route path="/projects/table_raid" component={raid}></Route>
+
         <Route path="/projects">
           <Projects selectedCat={selectedCategory} onClickFunction={onSelectedCategoryChange} projects={projectsToShow} />
         </Route>
