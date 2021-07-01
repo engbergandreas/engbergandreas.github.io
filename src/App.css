@@ -20,6 +20,8 @@ a {
 
      
 }
+
+
 .wrapper {
     display: flex;
     height: 10vh;
@@ -45,6 +47,7 @@ a {
     align-items: center;
     justify-content: center;
     color: #3C403D;
+    color: #fff;
     width: 125px;
     
 }
@@ -54,6 +57,8 @@ a {
 
 .activePage {
     color: rgb(129, 0, 0);
+    color: #fff;
+    font-weight: 600;
 }
 
 .projectsWrapper {
@@ -208,3 +213,12 @@ a {
         height 0.25s ease-out 0.25s;
 }
 
+
+.mainContent {     
+    /*background: linear-gradient(90deg, #79938d, #496368);*/
+    background: #121212;
+    min-height: 89vh;
+    padding-top: var(--gap);
+    padding-bottom: var(--gap);
+    color: white;
+}

@@ -5,13 +5,13 @@ import ProjectImage from '../Components/ProjectImage'
 import DemoCodeLinks from '../Components/DemoCodeInfo'
 import styled from 'styled-components'
 
-const StyledMain = styled.div`
+const StyledMain = styled.div `
     padding-top: var(--gap);
 `
 
 function ClothSimulation() {
     return (
-        <StyledMain>
+        <StyledMain className={"mainContent"}>
             <BackButton top />
             <ProjectTitle title={"CLOTH SIMULATION"} subtitle={"University project created fall 2021"} />
 

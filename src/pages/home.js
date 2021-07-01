@@ -8,7 +8,8 @@ const StyledMain = styled.div `
 
 function home() {
     return (
-        <StyledMain>
+        <StyledMain className="mainContent">
+            HEJ from HOME
         </StyledMain>
     );
 }
