@@ -46,12 +46,11 @@
         ]
     },
     {
-        "id": "5",
-        "title": "webb + programming",
-        "backgroundURL": "/images/placeholder250.png",
+        "id": "setfinder",
+        "title": "Lego Set Finder",
+        "backgroundURL": "/images/setfinder/logo.png",
         "categories": [
-            "webb",
-            "programming"
+            "webb"
         ]
     },
     {

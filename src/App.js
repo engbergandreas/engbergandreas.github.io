@@ -16,6 +16,8 @@ import raid from './projects/table_raid'
 import matkoma from './projects/matkoma'
 import soundflight from './projects/sound_flight'
 import legionen from './projects/legionen'
+import legofinder from './projects/setfinder'
+
 
 
 
@@ -59,7 +61,8 @@ function App() {
         <Route path="/projects/table_raid" component={raid}></Route>
         <Route path="/projects/matkoma" component={matkoma}></Route>
         <Route path="/projects/soundflight" component={soundflight}></Route>
-        <Route path="/projects/legionen" component={soundflight}></Route>
+        <Route path="/projects/legionen" component={legionen}></Route>
+        <Route path="/projects/setfinder" component={legofinder}></Route>
 
 
 
