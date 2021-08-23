@@ -13,6 +13,11 @@ import styled from 'styled-components'
 /*NEW PROJECT: Import project js file */ 
 import cloth from './projects/cloth_simulation'
 import raid from './projects/table_raid'
+import matkoma from './projects/matkoma'
+import soundflight from './projects/sound_flight'
+import legionen from './projects/legionen'
+
+
 
 /* 
 Olive: #A3BCB6
@@ -52,6 +57,11 @@ function App() {
         {/*NEW PROJECT: Add new projects link must match project id */}
         <Route path="/projects/cloth_simulation" component={cloth}></Route>
         <Route path="/projects/table_raid" component={raid}></Route>
+        <Route path="/projects/matkoma" component={matkoma}></Route>
+        <Route path="/projects/soundflight" component={soundflight}></Route>
+        <Route path="/projects/legionen" component={soundflight}></Route>
+
+
 
         <Route path="/projects">
           <Projects selectedCat={selectedCategory} onClickFunction={onSelectedCategoryChange} projects={projectsToShow} />
