@@ -53,7 +53,7 @@ function Projects({ selectedCat, onClickFunction, projects }) {
             <ProjectsWrapper>
                 {projects.map(project => (
                     //Creates a relative link to all the different projects using its ID
-                    <Link className="" style={{padding: "5px", background: "white"}} key={project.id} to={`${match.url}/${project.id}`}>
+                    <Link className="" style={{/*padding: "5px", background: "white"*/}} key={project.id} to={`${match.url}/${project.id}`}>
                         <ProjectThumbnail title={project.title} backgroundImg={project.backgroundURL} />
                     </Link>
                 ))}
