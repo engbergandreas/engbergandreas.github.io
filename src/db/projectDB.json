@@ -14,31 +14,35 @@
         "backgroundURL": "/images/table_raid/thumbnail.png",
         "categories": [
             "games",
-            "programming"
+            "programming",
+            "computer graphics"
         ]
     },
     {
-        "id": "a programming project",
-        "title": "a programming project",
-        "backgroundURL": "/images/placeholder250.png",
+        "id": "matkoma",
+        "title": "MatKOMA",
+        "backgroundURL": "/images/matkoma/logo.png",
         "categories": [
-            "programming"
-        ]
-    },
-    {
-        "id": "web",
-        "title": "a web project",
-        "backgroundURL": "/images/placeholder640.png",
-        "categories": [
+            "programming",
             "webb"
         ]
     },
     {
-        "id": "4",
-        "title": "yet another longer project name",
-        "backgroundURL": "/images/placeholder250.png",
+        "id": "soundflight",
+        "title": "Sound Flight",
+        "backgroundURL": "/images/soundflight/logo.png",
         "categories": [
-            "computer graphics"
+            "programming",
+            "games"
+        ]
+    },
+    {
+        "id": "legionen",
+        "title": "Legionen",
+        "backgroundURL": "/images/legionen/logo2.png",
+        "categories": [
+            "webb",
+            "games"
         ]
     },
     {
