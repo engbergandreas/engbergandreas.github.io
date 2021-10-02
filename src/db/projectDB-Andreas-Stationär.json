@@ -1,0 +1,81 @@
+[
+    {
+        "id": "cloth_simulation",
+        "title": "Cloth Simulation",
+        "backgroundURL": "/images/cloth/clothflag3.png",
+        "categories": [
+            "webb",
+            "programming"
+        ]
+    },
+    {
+        "id": "table_raid",
+        "title": "Table Raid",
+        "backgroundURL": "/images/table_raid/thumbnail.png",
+        "categories": [
+            "games",
+            "programming",
+            "computer graphics"
+        ]
+    },
+    {
+        "id": "matkoma",
+        "title": "MatKOMA",
+        "backgroundURL": "/images/matkoma/logo.png",
+        "categories": [
+            "programming",
+            "webb"
+        ]
+    },
+    {
+        "id": "soundflight",
+        "title": "Sound Flight",
+        "backgroundURL": "/images/soundflight/logo.png",
+        "categories": [
+            "programming",
+            "games"
+        ]
+    },
+    {
+        "id": "legionen",
+        "title": "Legionen",
+        "backgroundURL": "/images/legionen/logo2.png",
+        "categories": [
+            "webb",
+            "games"
+        ]
+    },
+    {
+        "id": "setfinder",
+        "title": "Lego Set Finder",
+        "backgroundURL": "/images/setfinder/logo.png",
+        "categories": [
+            "webb"
+        ]
+    },
+    {
+        "id": "6",
+        "title": "games + computer grpah",
+        "backgroundURL": "/images/placeholder250.png",
+        "categories": [
+            "games",
+            "computer graphics"
+        ]
+    },
+    {
+        "id": "7",
+        "title": "last game project",
+        "backgroundURL": "/images/placeholder1024.png",
+        "categories": [
+            "games"
+        ]
+    },
+    {
+        "id": "8",
+        "title": "last game project",
+        "backgroundURL": "/images/placeholder1024.png",
+        "categories": [
+            "games"
+        ]
+    }
+]
