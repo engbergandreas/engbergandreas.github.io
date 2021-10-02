@@ -52,30 +52,5 @@
         "categories": [
             "webb"
         ]
-    },
-    {
-        "id": "6",
-        "title": "games + computer grpah",
-        "backgroundURL": "/images/placeholder250.png",
-        "categories": [
-            "games",
-            "computer graphics"
-        ]
-    },
-    {
-        "id": "7",
-        "title": "last game project",
-        "backgroundURL": "/images/placeholder1024.png",
-        "categories": [
-            "games"
-        ]
-    },
-    {
-        "id": "8",
-        "title": "last game project",
-        "backgroundURL": "/images/placeholder1024.png",
-        "categories": [
-            "games"
-        ]
     }
 ]
