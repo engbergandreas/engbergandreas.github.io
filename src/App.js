@@ -10,13 +10,20 @@ import Home from './pages/home'
 import Error from './pages/error'
 import projects from './db/projectDB.json'
 import styled from 'styled-components'
-/*NEW PROJECT: Import project js file */ 
+/*NEW PROJECT: Import project js file */
 import cloth from './projects/cloth_simulation'
 import raid from './projects/table_raid'
 import matkoma from './projects/matkoma'
 import soundflight from './projects/sound_flight'
 import legionen from './projects/legionen'
 import legofinder from './projects/setfinder'
+import proceduralTerrain from './projects/procedural_terrain'
+import proceduralTrees from './projects/procedural_trees'
+import ColorMyWorld from './projects/color_my_world'
+import FaceRecognition from './projects/face_recognition'
+import GlobalIllumination from './projects/global_illumination'
+
+
 
 
 
@@ -33,7 +40,7 @@ Tanly: #DADED4
 White: #FFFFFF
 */
 
-const StyledMain = styled.div `
+const StyledMain = styled.div`
   
 `
 
@@ -55,14 +62,21 @@ function App() {
       <Switch>
 
         <Route path="/portfolio" component={Portfolio}></Route>
-        
-        {/*NEW PROJECT: Add new projects link must match project id */}
+
+        {/*NEW PROJECT: Add new projects here, link must match project id */}
         <Route path="/projects/cloth_simulation" component={cloth}></Route>
         <Route path="/projects/table_raid" component={raid}></Route>
         <Route path="/projects/matkoma" component={matkoma}></Route>
         <Route path="/projects/soundflight" component={soundflight}></Route>
         <Route path="/projects/legionen" component={legionen}></Route>
         <Route path="/projects/setfinder" component={legofinder}></Route>
+        <Route path="/projects/proceduralterrain" component={proceduralTerrain}></Route>
+        <Route path="/projects/proceduraltrees" component={proceduralTrees}></Route>
+        <Route path="/projects/global_illumination" component={GlobalIllumination}></Route>
+        <Route path="/projects/color_my_world" component={ColorMyWorld}></Route>
+        <Route path="/projects/facial_recognition" component={FaceRecognition}></Route>
+
+
 
 
 

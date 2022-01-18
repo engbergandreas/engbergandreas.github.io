@@ -10,7 +10,7 @@ const StyledMain = styled.div`
     padding-top: var(--gap);
 `
 
-function ExampleProject() {
+function GlobalIllumination() {
     return (
         <StyledMain>
             <BackButton top />
@@ -51,4 +51,4 @@ function ExampleProject() {
     );
 }
 
-export default ExampleProject;
+export default GlobalIllumination;

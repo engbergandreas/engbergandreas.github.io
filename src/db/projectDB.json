@@ -52,5 +52,49 @@
         "categories": [
             "webb"
         ]
+    },
+    {
+        "id": "proceduralterrain",
+        "title": "Procedural Generated Terrain",
+        "backgroundURL": "/images/procedural_terrain/logo2.png",
+        "categories": [
+            "programming",
+            "computer graphics"
+        ]
+    },
+    {
+        "id": "proceduraltrees",
+        "title": "Procedural Trees",
+        "backgroundURL": "/images/procedural_trees/logo.png",
+        "categories": [
+            "programming",
+            "computer graphics"
+        ]
+    },
+    {
+        "id": "facial_recognition",
+        "title": "Facial Recognition",
+        "backgroundURL": "/images/face_recognition/logo.png",
+        "categories": [
+            "programming"
+        ]
+    },
+    {
+        "id": "global_illumination",
+        "title": "Global Illumination",
+        "backgroundURL": "/images/global_illumination/logo.bmp",
+        "categories": [
+            "programming",
+            "computer graphics"
+        ]
+    },
+    {
+        "id": "color_my_world",
+        "title": "Color My World",
+        "backgroundURL": "/images/color_my_world/logo.png",
+        "categories": [
+            "programming",
+            "games"
+        ]
     }
 ]

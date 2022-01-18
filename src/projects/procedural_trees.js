@@ -10,11 +10,11 @@ const StyledMain = styled.div`
     padding-top: var(--gap);
 `
 
-function ExampleProject() {
+function ProceduralTrees() {
     return (
         <StyledMain>
             <BackButton top />
-            <ProjectTitle title={"THIS IS PROJECT TITLE"} subtitle={"some info about creation date? or other small title"} />
+            <ProjectTitle title={"Procedural Generated Trees"} subtitle={"some info about creation date? or other small title"} />
 
             <div className="projectInfo">
                 <h2>SUMMARY</h2>
@@ -51,4 +51,4 @@ function ExampleProject() {
     );
 }
 
-export default ExampleProject;
+export default ProceduralTrees;
