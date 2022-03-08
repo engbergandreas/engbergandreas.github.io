@@ -48,19 +48,20 @@ function home() {
                 </Wrapper>
             </Banner>
             <Info>
-                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vulputate consectetur sem,
-                    sit amet accumsan sem condimentum eu. Duis vel quam ligula. Quisque ipsum justo, convallis et eros in, fermentum cursus risus.
-                    Nunc ullamcorper lobortis viverra. In maximus gravida ante non accumsan. In ac purus sed tortor laoreet aliquet.
-                    Nullam gravida lobortis arcu non tincidunt. Phasellus viverra odio ex, sed facilisis nisl vehicula at.
-                    Cras sollicitudin purus at orci iaculis, eget consequat arcu fringilla.
-                    Fusce vehicula orci sed velit mollis, quis egestas nibh sagittis.
-                    Mauris metus augue, consectetur eget euismod ac, efficitur sit amet urna.
-                    Nulla quis diam sit amet nunc convallis auctor. Curabitur enim nibh,
-                    fermentum congue mi dictum at.
+                <p>
+                    Hi! I am Andreas Engberg and currently studying my 4:th year in  MSc in Media Technology and Engineering at Linköpings University.
+                    I am passionate coder with extra love for computer graphic, image processing & analysis and SFX.
+                    <br></br>
+                    I'm focusing my master profile towards computer graphics techniques, machine learning & AI. You can find the complete 
+                    list of all courses on my linked in profile. 
                 </p>
                 <p>
-                    Checkout my projects
-                    <NavLink to="/projects"> here</NavLink>
+                   Here you will find some of the projects I have worked on during my time at Linköpings University
+                    as well as some of my personal projects during my spare time.
+                    This site is very much a work in progress and Im continuously updating the projects. 
+                </p>
+                <p>
+                    You can checkout my projects <NavLink to="/projects"> here</NavLink>
                 </p>
             </Info>
         </StyledMain>

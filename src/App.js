@@ -22,6 +22,7 @@ import proceduralTrees from './projects/procedural_trees'
 import ColorMyWorld from './projects/color_my_world'
 import FaceRecognition from './projects/face_recognition'
 import GlobalIllumination from './projects/global_illumination'
+import BobRoss from './projects/bob_ross';
 
 
 
@@ -75,6 +76,7 @@ function App() {
         <Route path="/projects/global_illumination" component={GlobalIllumination}></Route>
         <Route path="/projects/color_my_world" component={ColorMyWorld}></Route>
         <Route path="/projects/facial_recognition" component={FaceRecognition}></Route>
+        <Route path="/projects/bobross" component={BobRoss}></Route>
 
 
 

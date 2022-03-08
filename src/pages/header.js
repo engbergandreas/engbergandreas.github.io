@@ -18,9 +18,9 @@ function Header() {
             <nav className="wrapper">
                 <NavLink exact activeClassName="activePage" className="wrapperChild" to="/">Home</NavLink >
                 <RightHalfHeader>
-                    <NavLink activeClassName="activePage" className="wrapperChild" to="/portfolio">Portfolio</NavLink>
+                    {/*<NavLink activeClassName="activePage" className="wrapperChild" to="/portfolio">Portfolio</NavLink>*/}
                     <NavLink activeClassName="activePage" className="wrapperChild" to="/projects">Projects</NavLink>
-                    <NavLink activeClassName="activePage" className="wrapperChild" to="/about">About</NavLink>
+                    {/*<NavLink activeClassName="activePage" className="wrapperChild" to="/about">About</NavLink>*/}
                 </RightHalfHeader>
             </nav>
         </StyledHeader>

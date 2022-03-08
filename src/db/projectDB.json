@@ -1,11 +1,20 @@
 [
     {
-        "id": "cloth_simulation",
-        "title": "Cloth Simulation",
-        "backgroundURL": "/images/cloth/clothflag3.png",
+        "id": "proceduralterrain",
+        "title": "Procedural Generated Terrain",
+        "backgroundURL": "/images/procedural_terrain/logo2.png",
         "categories": [
-            "webb",
-            "programming"
+            "programming",
+            "computer graphics"
+        ]
+    },
+    {
+        "id": "global_illumination",
+        "title": "Global Illumination",
+        "backgroundURL": "/images/global_illumination/logo.bmp",
+        "categories": [
+            "programming",
+            "computer graphics"
         ]
     },
     {
@@ -19,12 +28,55 @@
         ]
     },
     {
+        "id": "color_my_world",
+        "title": "Color My World",
+        "backgroundURL": "/images/color_my_world/logo.png",
+        "categories": [
+            "programming",
+            "games"
+        ]
+    },
+    {
+        "id": "proceduraltrees",
+        "title": "Procedural Generated Trees",
+        "backgroundURL": "/images/procedural_trees/logo.png",
+        "categories": [
+            "programming",
+            "computer graphics"
+        ]
+    },
+    {
+        "id": "facial_recognition",
+        "title": "Facial Recognition",
+        "backgroundURL": "/images/face_recognition/logo.png",
+        "categories": [
+            "programming"
+        ]
+    },
+    {
+        "id": "cloth_simulation",
+        "title": "Cloth Simulation",
+        "backgroundURL": "/images/cloth/clothflag3.png",
+        "categories": [
+            "webb",
+            "programming"
+        ]
+    },
+    {
         "id": "matkoma",
         "title": "MatKOMA",
         "backgroundURL": "/images/matkoma/logo.png",
         "categories": [
             "programming",
             "webb"
+        ]
+    },
+    {
+        "id": "bobross",
+        "title": "Bob Ross 3D-Painting",
+        "backgroundURL": "/images/bob_ross/logo.jpg",
+        "categories": [
+            "computer graphics"
         ]
     },
     {
@@ -41,7 +93,7 @@
         "title": "Legionen",
         "backgroundURL": "/images/legionen/logo2.png",
         "categories": [
-            "webb",
+            "programming",
             "games"
         ]
     },
@@ -51,50 +103,6 @@
         "backgroundURL": "/images/setfinder/logo.png",
         "categories": [
             "webb"
-        ]
-    },
-    {
-        "id": "proceduralterrain",
-        "title": "Procedural Generated Terrain",
-        "backgroundURL": "/images/procedural_terrain/logo2.png",
-        "categories": [
-            "programming",
-            "computer graphics"
-        ]
-    },
-    {
-        "id": "proceduraltrees",
-        "title": "Procedural Trees",
-        "backgroundURL": "/images/procedural_trees/logo.png",
-        "categories": [
-            "programming",
-            "computer graphics"
-        ]
-    },
-    {
-        "id": "facial_recognition",
-        "title": "Facial Recognition",
-        "backgroundURL": "/images/face_recognition/logo.png",
-        "categories": [
-            "programming"
-        ]
-    },
-    {
-        "id": "global_illumination",
-        "title": "Global Illumination",
-        "backgroundURL": "/images/global_illumination/logo.bmp",
-        "categories": [
-            "programming",
-            "computer graphics"
-        ]
-    },
-    {
-        "id": "color_my_world",
-        "title": "Color My World",
-        "backgroundURL": "/images/color_my_world/logo.png",
-        "categories": [
-            "programming",
-            "games"
         ]
     }
 ]
