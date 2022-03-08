@@ -9,7 +9,16 @@ const MulitpleImages  = styled.div `
     align-items: baseline;
 
     & figure {
-        margin: 15px;
+        //margin: 15px;
+        margin: 0 5px;
+        max-width: 49%;
+
+    }
+
+    @media (max-width: 1500px) {
+        & figure {
+            max-width: 100%;
+        }
     }
 `
 
