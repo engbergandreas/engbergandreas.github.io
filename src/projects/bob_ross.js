@@ -13,7 +13,7 @@ const StyledMain = styled.div`
 
 function BobRoss() {
     return (
-        <StyledMain>
+        <StyledMain className={"mainContent"}>
             <BackButton top />
             <ProjectTitle title={"3D PAINTING - BOB ROSS"} subtitle={"University project created spring 2020"} />
 

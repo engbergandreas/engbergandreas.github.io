@@ -12,7 +12,7 @@ const StyledMain = styled.div `
 
 function SoundFlight() {
     return (
-        <StyledMain>
+        <StyledMain className={"mainContent"}>
             <BackButton top/>
             <ProjectTitle title ={"SOUND FLIGHT"} subtitle={"University project created fall 2020"} />
 

@@ -13,7 +13,7 @@ const StyledMain = styled.div`
 
 function ColorMyWorld() {
     return (
-        <StyledMain>
+        <StyledMain className={"mainContent"}>
             <BackButton top />
             <ProjectTitle title={"COLOR MY WORLD"} subtitle={"Individual university project created fall 2021"} />
 

@@ -13,7 +13,7 @@ const StyledMain = styled.div`
 
 function ProceduralTrees() {
     return (
-        <StyledMain>
+        <StyledMain className={"mainContent"}>
             <BackButton top />
             <ProjectTitle title={"PROCEDURAL GENERATED TREES"} subtitle={"Individual university project created fall 2021"} />
 

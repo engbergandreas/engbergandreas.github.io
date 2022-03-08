@@ -12,7 +12,7 @@ const StyledMain = styled.div `
 
 function MatKoma() {
     return (
-        <StyledMain>
+        <StyledMain className={"mainContent"}>
             <BackButton top/>
             <ProjectTitle title ={"MATKOMA"} subtitle={"University project created fall 2020"} />
 

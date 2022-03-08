@@ -12,7 +12,7 @@ const StyledMain = styled.div`
 
 function FaceRecognition() {
     return (
-        <StyledMain>
+        <StyledMain className={"mainContent"}>
             <BackButton top />
             <ProjectTitle title={"FACE RECOGNITION"} subtitle={"University project created fall 2021"} />
 

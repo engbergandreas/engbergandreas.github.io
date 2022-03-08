@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import Projects from './projects'
 import { NavLink } from 'react-router-dom';
+import ReferenceLink from '../Components/ReferenceLink';
 
 
 const StyledMain = styled.div`
@@ -53,7 +54,7 @@ function home() {
                     I am passionate coder with extra love for computer graphic, image processing & analysis and SFX.
                     <br></br>
                     I'm focusing my master profile towards computer graphics techniques, machine learning & AI. You can find the complete 
-                    list of all courses on my linked in profile. 
+                    list of all courses on my <ReferenceLink reference={'https://www.linkedin.com/in/andreas-engberg/'} text={'LinkedIn profile'}></ReferenceLink>. 
                 </p>
                 <p>
                    Here you will find some of the projects I have worked on during my time at Linköpings University

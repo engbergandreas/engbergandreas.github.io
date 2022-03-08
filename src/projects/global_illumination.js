@@ -14,7 +14,7 @@ const StyledMain = styled.div`
 
 function GlobalIllumination() {
     return (
-        <StyledMain>
+        <StyledMain className={"mainContent"}>
             <BackButton top />
             <ProjectTitle title={"GLOBAL ILLUMINATION"} subtitle={"University project created fall 2021"} />
             <BlockMath>{" L(x \\leftarrow \\omega) = L_{e}(x \\leftarrow \\omega) + \\int_{\\omega_{1}} f_{r}(x_{1}, -\\omega,\\omega_{1}) L(x_{1} \\leftarrow \\omega_{1})cos(\\theta_{1})d\\omega_{1}"}</BlockMath>

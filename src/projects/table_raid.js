@@ -14,7 +14,7 @@ const StyledMain = styled.div`
 
 function ExampleProject() {
     return (
-        <StyledMain>
+        <StyledMain className={"mainContent"}>
             <BackButton top />
             <ProjectTitle title={"TABLE RAID"} subtitle={"Bachelor project created spring 2021"} />
 

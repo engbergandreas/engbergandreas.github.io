@@ -12,7 +12,7 @@ const StyledMain = styled.div `
 
 function Legionen() {
     return (
-        <StyledMain>
+        <StyledMain className={"mainContent"}>
             <BackButton top/>
             <ProjectTitle title ={"LEGIONEN - THE GAME"} subtitle={"Individual project created 2019"} />
 

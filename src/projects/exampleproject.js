@@ -12,7 +12,7 @@ const StyledMain = styled.div`
 
 function ExampleProject() {
     return (
-        <StyledMain>
+        <StyledMain className={"mainContent"}>
             <BackButton top />
             <ProjectTitle title={"THIS IS PROJECT TITLE"} subtitle={"some info about creation date? or other small title"} />
 
