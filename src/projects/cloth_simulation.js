@@ -13,7 +13,7 @@ function ClothSimulation() {
     return (
         <StyledMain className={"mainContent"}>
             <BackButton top />
-            <ProjectTitle title={"CLOTH SIMULATION"} subtitle={"University project created fall 2021"} />
+            <ProjectTitle title={"CLOTH SIMULATION"} subtitle={"University project created spring 2021"} />
 
             <div className="projectInfo">
                 <h2>SUMMARY</h2>
@@ -57,7 +57,7 @@ function ClothSimulation() {
                     We then began the process of visualizing our model using P5.js. We start by drawing a grid of particles and connected them to their neighbors. 
                     Then we had to redo the physics implementation we had previously done in MATLAB. 
                     However here we encountered some problems when calculating these cloth forces. 
-                    What we did was incorrectly calculating each particle current force and applied it to the particle in the same loop, this gave us very wierd results 
+                    What we did first was incorrectly calculating each particle current force and applied it to the particle in the same loop, this gave us very wierd results 
                     since the neighboring particles were now being calculated using both old and new force data.
                     To overcome this we first calculate the current force of every particle using the data from the previous frame, then we loop over every particle again
                     this time calculating the acceleration, velocity and position for the next frame. 

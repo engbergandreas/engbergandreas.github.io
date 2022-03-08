@@ -5,6 +5,7 @@ import ProjectImage from '../Components/ProjectImage'
 import ProjectImages from '../Components/ProjectImages'
 import DemoCodeLinks from '../Components/DemoCodeInfo'
 import styled from 'styled-components'
+import ReferenceLink from '../Components/ReferenceLink'
 
 const StyledMain = styled.div`
     padding-top: var(--gap);
@@ -14,36 +15,67 @@ function ProceduralTerrain() {
     return (
         <StyledMain>
             <BackButton top />
-            <ProjectTitle title={"THIS IS PROJECT TITLE"} subtitle={"some info about creation date? or other small title"} />
+            <ProjectTitle title={"PROCEDURAL GENERATED TERRAIN"} subtitle={"University project created winter 2021"} />
 
             <div className="projectInfo">
                 <h2>SUMMARY</h2>
-                <p>Here is some great info about this project and perhaps a small summary of what the project
-                    is all about. After this perhaps an image or two would be a good idea. I will also need
-                    to come up with some more info so that this paragrahp actually has some length.
-                </p>
-                <ProjectImage source={'../images/placeholder1024.png'} description='this image represents bla bla blasad assaddsasdasad  dsads ' />
-                <DemoCodeLinks code="https://github.com/engbergandreas/cloth-simulation" demo="https://engbergandreas.github.io/cloth-simulation/"></DemoCodeLinks>
+                <p>
+                    In this project we created an endless procedurally generetared terrain in OpenGL using 
+                    multiple perlin noise layers (FBM) to create an interesting environment.
+                    We implemented techniques such as frustum culling,
+                    discrete level of detal (LOD) and CPU threading to improve real time rendering.
+                    This project was part of the course Advanced Game Programming (TSBK03)
+                    at Linköpings University and was created by me and <ReferenceLink reference={"https://github.com/mansaronsson"} text={"Måns Arronsson"}></ReferenceLink> 
 
-                <p>then after an image we have some more text to explain something else about the project, which can also include some maths
-                    or w/e is nessesary. Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took
-                    a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
                 </p>
 
-                <ProjectImages source1={'../images/placeholder250.png'} description1={'this image represents bla bla bla as sadsad ds a dsa sad'}
-                    source2={'../images/placeholder640.png'} description2={'this is another descprition hoasdasd'} />
+                <ProjectImage source={'../images/procedural_terrain/result.png'} description='' />
+                <DemoCodeLinks code="https://github.com/engbergandreas/ProceduralGeneratedTerrain"></DemoCodeLinks>
 
-                <h2>Section</h2>
-                <p> This also contains some more info about the project Lorem Ipsum has been the industry's standard dummy
-                    text ever since the 1500s, when an unknown printer took
-                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took
+                <h1 style={{ textAlign: 'center' }}>Implementation</h1>
+
+                <h2>Terrain</h2>
+
+                <p>
+                The endless terrain was created as an unevenly sized grid of equally large chunks.
+                Each chunk consisted of a mesh of vertices with equal spacing containing the terrain data.
+                We define the triangle strips as shown in the image below. 
+                We use a skirt at the end of each chunk to hide artifacts between neighboring chunks of different LOD.
+                The height of any given vertex is computed using Fractal Brownian Motion (FBM), we used six octaves 
+                of Perlin Noise where each octave doubles the frequency and halves the amplitude.
                 </p>
-                <p> Then comes another paragraph This also contains some more info about the project Lorem Ipsum has been the industry's standard dummy
-                    text ever since the 1500s, when an unknown printer took
-                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took
+
+                <ProjectImage source={'../images/procedural_terrain/grid.png'} description={'Underlying terrain structure'}></ProjectImage>
+
+                <h3>Normals</h3>
+                <p>
+                    The normal at each vertex is computed by considering all connected triangles.
+                    For non-edge vertices we know all neighboring vertices lie in the same terrain chunk. 
+                    However, for edge vertices there can be up to three vertices in a neighbor chunk. 
+                    Instead of doing an expensive search for those vertex indices we opted to generate fake vertices 
+                    for those missing like shown in the left figure below. This is an important problem to solve
+                    as we must create smooth surface normals between neighboring chunks.  
                 </p>
-                <ProjectImage source='../images/placeholder640.png' description='asdasdd' />
+                <ProjectImages source1={'../images/procedural_terrain/fakevertex.png'} 
+                description1={'Fake vertices are generated to compute the correct normal for yellow vertex.'}
+                source2={'../images/procedural_terrain/normalcomparision.png'}
+                description2={'Comparision showing the artifacts that arise when not computing edge normals correctly.'}
+                ></ProjectImages>
+
+                <h3>Frustum culling</h3>
+                <ProjectImage source={'../images/procedural_terrain/bounding_box.png'} 
+                description={'Result from culling terrain, chunks outside camera frustum (white lines) are not drawn.'} />
+                
+
+
+                <h3>Discrete level of detail</h3>
+                <ProjectImage source={'../images/procedural_terrain/lod.png'} 
+                description={'LOD visualized by color, green most detailed to red least detailed with respect to distance from camera.'} />
+
+
+
+                <h3>Multi-threading</h3>
+
                 <BackButton />
             </div>
         </StyledMain>
