@@ -234,3 +234,9 @@ h1, h2, h3, h4, h5, h6 {
     padding-bottom: var(--gap);
     color: white;
 }
+
+.mainContent a {
+    color: white;
+    border-color: white;
+}
+
