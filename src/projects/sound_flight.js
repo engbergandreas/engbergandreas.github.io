@@ -20,7 +20,7 @@ function SoundFlight() {
                 <h2>SUMMARY</h2>
                 <p>
                 </p>
-                <DemoCodeLinks code="https://github.com/engbergandreas/SoundFlight" demo="https://engbergandreas.github.io/cloth-simulation/"></DemoCodeLinks>
+                <DemoCodeLinks code="https://github.com/engbergandreas/SoundFlight"></DemoCodeLinks>
 
 
                 <BackButton />

@@ -20,7 +20,7 @@ function Legionen() {
                 <h2>SUMMARY</h2>
                 <p>
                 </p>
-                <DemoCodeLinks code="https://github.com/engbergandreas/cloth-simulation" demo="https://engbergandreas.github.io/cloth-simulation/"></DemoCodeLinks>
+                <DemoCodeLinks code="https://github.com/engbergandreas/Legionen-Webbsida" demo="https://legionen.nu/arkiv/2019/"></DemoCodeLinks>
 
                 <BackButton />
             </div>

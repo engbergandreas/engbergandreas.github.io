@@ -34,7 +34,7 @@ function ExampleProject() {
                     
                 </p>
                 <h2>Demo</h2>
-                <DemoVideo source={'../videos/DemoTableRaid.mp4'} videotype={"video/mp4"}></DemoVideo>
+                {/*<DemoVideo source={'../videos/DemoTableRaid.mp4'} videotype={"video/mp4"}></DemoVideo> */}
                 <DemoCodeLinks code="https://github.com/jonan270/gesture-based-game/tree/Beta2.0"></DemoCodeLinks>
 
                 <h3>Game design</h3>
@@ -44,7 +44,7 @@ function ExampleProject() {
                 source2={''} description2={''} />
 
                 <h3>Gesture recognition</h3>
-                <ProjectImage source={'../images/table_raid/gesture_new.png'} description={'User performing a gesture.'} />
+                <ProjectImage source={'../images/table_raid/gesture_new.PNG'} description={'User performing a gesture.'} />
 
                 <h3>Abilities system</h3>
 

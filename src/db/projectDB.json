@@ -20,7 +20,7 @@
     {
         "id": "table_raid",
         "title": "Table Raid",
-        "backgroundURL": "/images/table_raid/thumbnail.png",
+        "backgroundURL": "/images/table_raid/thumbnail.PNG",
         "categories": [
             "games",
             "programming",
@@ -82,7 +82,7 @@
     {
         "id": "soundflight",
         "title": "Sound Flight",
-        "backgroundURL": "/images/soundflight/logo.png",
+        "backgroundURL": "/images/soundflight/logo.PNG",
         "categories": [
             "programming",
             "games"
@@ -91,7 +91,7 @@
     {
         "id": "legionen",
         "title": "Legionen",
-        "backgroundURL": "/images/legionen/logo2.png",
+        "backgroundURL": "/images/legionen/logo2.PNG",
         "categories": [
             "programming",
             "games"
@@ -100,7 +100,7 @@
     {
         "id": "setfinder",
         "title": "Lego Set Finder",
-        "backgroundURL": "/images/setfinder/logo.png",
+        "backgroundURL": "/images/setfinder/logo.PNG",
         "categories": [
             "webb"
         ]
