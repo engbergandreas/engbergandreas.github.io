@@ -7,19 +7,17 @@ import DemoCodeLinks from '../Components/DemoCodeInfo'
 import styled from 'styled-components'
 import 'katex/dist/katex.min.css'
 import { InlineMath, BlockMath } from 'react-katex'
+import StyledMain, { ProjectInfo } from '../Components/UtilityComponents'
 
-const StyledMain = styled.div`
-    padding-top: var(--gap);
-`
 
 function GlobalIllumination() {
     return (
-        <StyledMain className={"mainContent"}>
+        <StyledMain>
             <BackButton top />
             <ProjectTitle title={"GLOBAL ILLUMINATION"} subtitle={"University project created fall 2021"} />
             <BlockMath>{" L(x \\leftarrow \\omega) = L_{e}(x \\leftarrow \\omega) + \\int_{\\omega_{1}} f_{r}(x_{1}, -\\omega,\\omega_{1}) L(x_{1} \\leftarrow \\omega_{1})cos(\\theta_{1})d\\omega_{1}"}</BlockMath>
 
-            <div className="projectInfo">
+            <ProjectInfo>
                 <h2>SUMMARY</h2>
                 <p>
                     
@@ -34,7 +32,7 @@ function GlobalIllumination() {
                 <h3>Reflection</h3>
                 <h3>Ray tree</h3>
                 <BackButton />
-            </div>
+            </ProjectInfo>
         </StyledMain>
 
     );

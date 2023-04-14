@@ -3,11 +3,8 @@ import styled from 'styled-components'
 import Projects from './projects'
 import { NavLink } from 'react-router-dom';
 import ReferenceLink from '../Components/ReferenceLink';
+import StyledMain from '../Components/UtilityComponents';
 
-
-const StyledMain = styled.div`
-    padding-top: var(--gap);
-`;
 const Banner = styled.div`
     display: flex;
     align-items: center;
@@ -40,7 +37,7 @@ const Wrapper = styled.div`
 
 function home() {
     return (
-        <StyledMain className="mainContent">
+        <StyledMain>
             <Banner>
                 <Portrait src="../images/me.png"></Portrait>
                 <Wrapper>
@@ -53,13 +50,17 @@ function home() {
                     Hi! I am Andreas Engberg and currently studying my 4:th year in  MSc in Media Technology and Engineering at Linköpings University.
                     I am passionate coder with extra love for computer graphic, image processing & analysis and SFX.
                     <br></br>
-                    I'm focusing my master profile towards computer graphics techniques, machine learning & AI. You can find the complete 
+                    I'm focusing my master profile towards courses which will further my competens 
+                    within C++ programming, computer graphics techniques, machine learning & AI. You can find the complete 
                     list of all courses on my <ReferenceLink reference={'https://www.linkedin.com/in/andreas-engberg/'} text={'LinkedIn profile'}></ReferenceLink>. 
                 </p>
                 <p>
-                   Here you will find some of the projects I have worked on during my time at Linköpings University
+                    Here you will find some of the projects I have worked on during my time at Linköpings University
                     as well as some of my personal projects during my spare time.
-                    This site is very much a work in progress and Im continuously updating the projects. 
+                    This site is very much a work in progress and Im continuously updating the projects descriptions. My goal is that 
+                    every project listed will have a blog type information about the development, thought process or problems that
+                    occured or otherwise had to be solved.
+
                 </p>
                 <p>
                     You can checkout my projects <NavLink to="/projects"> here</NavLink>

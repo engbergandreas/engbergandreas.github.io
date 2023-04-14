@@ -7,18 +7,16 @@ import DemoCodeLinks from '../Components/DemoCodeInfo'
 import styled from 'styled-components'
 import DemoVideo from '../Components/DemoVideo'
 import QuickInfo from '../Components/QuickInfo'
+import StyledMain, { ProjectInfo } from '../Components/UtilityComponents'
 
-const StyledMain = styled.div`
-    padding-top: var(--gap);
-`
 
 function ExampleProject() {
     return (
-        <StyledMain className={"mainContent"}>
+        <StyledMain>
             <BackButton top />
             <ProjectTitle title={"TABLE RAID"} subtitle={"Bachelor project created spring 2021"} />
 
-            <div className="projectInfo">
+            <ProjectInfo>
                 <QuickInfo typeinfo={["VR", "Multiplayer", "Unity"]}></QuickInfo>
 
                 <h2>SUMMARY</h2>
@@ -52,7 +50,7 @@ function ExampleProject() {
 
 
                 <BackButton />
-            </div>
+            </ProjectInfo>
         </StyledMain>
 
     );

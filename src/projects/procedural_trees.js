@@ -6,18 +6,16 @@ import ProjectImages from '../Components/ProjectImages'
 import DemoCodeLinks from '../Components/DemoCodeInfo'
 import styled from 'styled-components'
 import ReferenceLink from '../Components/ReferenceLink'
+import StyledMain, { ProjectInfo } from '../Components/UtilityComponents'
 
-const StyledMain = styled.div`
-    padding-top: var(--gap);
-`
 
 function ProceduralTrees() {
     return (
-        <StyledMain className={"mainContent"}>
+        <StyledMain>
             <BackButton top />
             <ProjectTitle title={"PROCEDURAL GENERATED TREES"} subtitle={"Individual university project created fall 2021"} />
 
-            <div className="projectInfo">
+            <ProjectInfo>
                 <h2>SUMMARY</h2>
                 <p>Here is some great info about this project and perhaps a small summary of what the project
                     is all about. After this perhaps an image or two would be a good idea. I will also need
@@ -41,11 +39,9 @@ function ProceduralTrees() {
                 </p>
 
                 <ProjectImage source={'../images/procedural_trees/validation.png'} description={'Tree validation of the terrain'} />
-
-
-                
+               
                 <BackButton />
-            </div>
+            </ProjectInfo>
         </StyledMain>
 
     );

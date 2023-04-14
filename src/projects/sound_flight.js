@@ -5,18 +5,15 @@ import ProjectImage from '../Components/ProjectImage'
 import ProjectImages from '../Components/ProjectImages'
 import DemoCodeLinks from '../Components/DemoCodeInfo'
 import styled from 'styled-components'
-
-const StyledMain = styled.div `
-    padding-top: var(--gap);
-` 
+import StyledMain, { ProjectInfo } from '../Components/UtilityComponents'
 
 function SoundFlight() {
     return (
-        <StyledMain className={"mainContent"}>
+        <StyledMain>
             <BackButton top/>
             <ProjectTitle title ={"SOUND FLIGHT"} subtitle={"University project created fall 2020"} />
 
-            <div className="projectInfo">
+            <ProjectInfo>
                 <h2>SUMMARY</h2>
                 <p>
                 </p>
@@ -24,7 +21,7 @@ function SoundFlight() {
 
 
                 <BackButton />
-            </div>
+            </ProjectInfo>
         </StyledMain>
 
     );

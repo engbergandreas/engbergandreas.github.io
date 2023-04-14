@@ -5,18 +5,16 @@ import ProjectImage from '../Components/ProjectImage'
 import ProjectImages from '../Components/ProjectImages'
 import DemoCodeLinks from '../Components/DemoCodeInfo'
 import styled from 'styled-components'
+import StyledMain, { ProjectInfo } from '../Components/UtilityComponents'
 
-const StyledMain = styled.div `
-    padding-top: var(--gap);
-` 
 
 function SetFinder() {
     return (
-        <StyledMain className={"mainContent"}>
+        <StyledMain>
             <BackButton top/>
             <ProjectTitle title ={"SETFINDER"} subtitle={"University project created fall 2018"} />
 
-            <div className="projectInfo">
+            <ProjectInfo>
                 <h2>SUMMARY</h2>
                 <p>
 
@@ -26,7 +24,7 @@ function SetFinder() {
 
 
                 <BackButton />
-            </div>
+            </ProjectInfo>
         </StyledMain>
 
     );

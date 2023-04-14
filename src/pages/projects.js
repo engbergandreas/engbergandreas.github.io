@@ -1,13 +1,7 @@
 import React from 'react'
 import { Link, Route, Switch, useRouteMatch } from 'react-router-dom';
 import styled from 'styled-components'
-
-const StyledMain = styled.div `
-    /*background: linear-gradient(90deg, #79938d, #496368);*/
-    background: #121212;
-    min-height: 89vh;
-    padding-top: var(--gap);
-`;
+import StyledMain from '../Components/UtilityComponents';
 
 const CategoriesWrapper = styled.div `
     display: flex;
@@ -26,6 +20,34 @@ const ProjectsWrapper = styled.div `
 
 `;
 
+const CategoryButton = styled.button `
+    height: 50px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid #3C403D; */
+    border: 0;
+    cursor: pointer;
+    color: #fff;
+    background: unset;
+    font-weight: bolder;
+    margin:5px;
+
+    &:hover {
+        background: rgb(0, 0, 0, 0.25);
+        color: #fff;
+    }
+
+    &:focus {
+        outline: none;
+    }
+
+    &.activeCategory {
+        border: 2px solid #fff;
+    }
+`
+
 const CATEGORIES = ['SHOW ALL', 'GAMES', 'COMPUTER GRAPHICS', 'PROGRAMMING', 'WEBB'];
 
 function Projects({ selectedCat, onClickFunction, projects }) {
@@ -36,11 +58,11 @@ function Projects({ selectedCat, onClickFunction, projects }) {
             <CategoriesWrapper>
                 {
                     CATEGORIES.map((category, index) => (
-                        <button key={index} className={category === selectedCat ? 'activeCategory category' : 'category buttonAnimation'}
+                        <CategoryButton key={index} className={category === selectedCat ? 'activeCategory' : 'buttonAnimation'}
                             onClick={() => onClickFunction(category)}
                         >
                             {category}
-                        </button >
+                        </CategoryButton >
                     ))
                 }
             </CategoriesWrapper >

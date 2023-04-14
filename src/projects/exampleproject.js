@@ -5,18 +5,16 @@ import ProjectImage from '../Components/ProjectImage'
 import ProjectImages from '../Components/ProjectImages'
 import DemoCodeLinks from '../Components/DemoCodeInfo'
 import styled from 'styled-components'
+import StyledMain, { ProjectInfo } from '../Components/UtilityComponents'
 
-const StyledMain = styled.div`
-    padding-top: var(--gap);
-`
 
 function ExampleProject() {
     return (
-        <StyledMain className={"mainContent"}>
+        <StyledMain >
             <BackButton top />
             <ProjectTitle title={"THIS IS PROJECT TITLE"} subtitle={"some info about creation date? or other small title"} />
 
-            <div className="projectInfo">
+            <ProjectInfo>
                 <h2>SUMMARY</h2>
                 <p>
                     Here is some great info about this project and perhaps a small summary of what the project
@@ -52,7 +50,7 @@ function ExampleProject() {
                 </p>
                 <ProjectImage source='../images/placeholder640.png' description={'Image description'} />
                 <BackButton />
-            </div>
+            </ProjectInfo>
         </StyledMain>
 
     );

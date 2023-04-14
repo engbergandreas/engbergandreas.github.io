@@ -5,18 +5,16 @@ import ProjectImage from '../Components/ProjectImage'
 import ProjectImages from '../Components/ProjectImages'
 import DemoCodeLinks from '../Components/DemoCodeInfo'
 import styled from 'styled-components'
+import StyledMain, { ProjectInfo } from '../Components/UtilityComponents'
 
-const StyledMain = styled.div `
-    padding-top: var(--gap);
-` 
 
 function MatKoma() {
     return (
-        <StyledMain className={"mainContent"}>
+        <StyledMain>
             <BackButton top/>
             <ProjectTitle title ={"MATKOMA"} subtitle={"University project created fall 2020"} />
 
-            <div className="projectInfo">
+            <ProjectInfo>
                 <h2>SUMMARY</h2>
 
                 <DemoCodeLinks code="https://github.com/engbergandreas/matkoma" demo="https://3djakob.github.io/matkoma/"></DemoCodeLinks>
@@ -24,7 +22,7 @@ function MatKoma() {
                 <ProjectImage source={'../images/matkoma/overview.png'} description={'Preferences page'} />
 
                 <BackButton />
-            </div>
+            </ProjectInfo>
         </StyledMain>
 
     );

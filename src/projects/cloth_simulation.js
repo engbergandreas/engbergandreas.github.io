@@ -4,18 +4,16 @@ import ProjectTitle from '../Components/ProjectTitle'
 import ProjectImage from '../Components/ProjectImage'
 import DemoCodeLinks from '../Components/DemoCodeInfo'
 import styled from 'styled-components'
+import StyledMain, { ProjectInfo } from '../Components/UtilityComponents'
 
-const StyledMain = styled.div `
-    padding-top: var(--gap);
-`
 
 function ClothSimulation() {
     return (
-        <StyledMain className={"mainContent"}>
+        <StyledMain>
             <BackButton top />
             <ProjectTitle title={"CLOTH SIMULATION"} subtitle={"University project created spring 2021"} />
 
-            <div className="projectInfo">
+            <ProjectInfo>
                 <h2>SUMMARY</h2>
                 <p>
                     The cloth simulation was a project done in the course 'Modeling Course (TNM085)' at Linköpings University during 6½ weeks by a group of 4 people.
@@ -81,7 +79,7 @@ function ClothSimulation() {
 
                 <ProjectImage source={'../images/cloth/textureflag2.png'} description='' />
                 <BackButton />
-            </div>
+            </ProjectInfo>
         </StyledMain>
 
     );

@@ -5,25 +5,23 @@ import ProjectImage from '../Components/ProjectImage'
 import ProjectImages from '../Components/ProjectImages'
 import DemoCodeLinks from '../Components/DemoCodeInfo'
 import styled from 'styled-components'
+import StyledMain, { ProjectInfo } from '../Components/UtilityComponents'
 
-const StyledMain = styled.div `
-    padding-top: var(--gap);
-` 
 
 function Legionen() {
     return (
-        <StyledMain className={"mainContent"}>
+        <StyledMain>
             <BackButton top/>
             <ProjectTitle title ={"LEGIONEN - THE GAME"} subtitle={"Individual project created 2019"} />
 
-            <div className="projectInfo">
+            <ProjectInfo>
                 <h2>SUMMARY</h2>
                 <p>
                 </p>
                 <DemoCodeLinks code="https://github.com/engbergandreas/Legionen-Webbsida" demo="https://legionen.nu/arkiv/2019/"></DemoCodeLinks>
 
                 <BackButton />
-            </div>
+            </ProjectInfo>
         </StyledMain>
 
     );

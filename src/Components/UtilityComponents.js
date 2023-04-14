@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 const StyledMain = styled.div `
     /*background: linear-gradient(90deg, #79938d, #496368);*/
-    background: #121212;
+    background: var(--primary-background-color);
     min-height: 89vh;
     padding-top: var(--gap);
     padding-bottom: var(--gap);
@@ -16,13 +16,13 @@ const StyledMain = styled.div `
     }
 `
 
-function MainContent({content}) {
+const ProjectInfo = styled.div `
+    width: 65vw;
+    margin: 0 auto;
 
-    return (
-        <StyledMain>
-            {content}
-        </StyledMain>
-    )
-}
-
-export default MainContent
+    & p {
+        text-align: justify;
+    }
+`
+export { ProjectInfo };
+export default StyledMain

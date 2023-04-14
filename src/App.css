@@ -11,7 +11,6 @@ body {
 
 a {
     text-decoration: none;
-    color: gray;
 }
 
 p, div{
@@ -27,13 +26,15 @@ h1, h2, h3, h4, h5, h6 {
     overflow: hidden;
     display: block;
     position: relative;
-    --gap: 100px;
     padding-bottom: max(var(--gap), 10vh); /*same height as footer */
-
-     
 }
 
-
+:root {
+    /* Global settings */
+    --gap: 100px;
+    --primary-background-color: #141414;
+}
+     
 .wrapper {
     display: flex;
     height: 10vh;
@@ -88,97 +89,7 @@ h1, h2, h3, h4, h5, h6 {
 
 }
 
-.project {
-    height: 300px;
-    min-width: 300px;
-    max-width: 440px;
-    margin: 0 auto; /*for really big screens*/
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    position: relative;
-}
-
-.project span {
-    padding: 0 5px;
-    visibility: hidden;
-    font-size: 30px;
-    font-weight: 600;
-    opacity: 0;
-    transition: opacity .7s;
-    
-}
-
-.project::before {
-    content: "";
-    background: rgba(255, 255, 255, 0);
-    transition: background .3s;
-
-}
-.project:hover::before {
-    display: block;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: rgba(255, 255, 255, 0.25);
-}
-
-.project:hover span {
-    visibility: visible;
-    color:white;
-    opacity: 1;
-}
-.projectTitleInfo {
-    text-align: center;
-    margin: 5vh 0;
-}
-.projectTitleInfo h1,h2 {
-    margin: 0;
-}
-
-.projectInfo {
-    width: 65vw;
-    margin: 0 auto;
-}
-.projectInfo p {
-    text-align: justify;
-}
-
-.category {
-    height: 50px;
-    width: 200px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /* border: 2px solid #3C403D; */
-    border: 0;
-    cursor: pointer;
-    color: #fff;
-    background: unset;
-    font-weight: bolder;
-    margin:5px;
-
-}
-.category:hover {
-    background: rgb(0, 0, 0, 0.25);
-    color: #fff;
-    /* border: 2px solid #fff; */
-}
-.category:focus {
-    outline: none;
-}
-.activeCategory {
-    color: #fff;
-    border-color: #fff;
-    border: 2px solid #fff;
-}
-
+/* Category Button Border Animation */
 .buttonAnimation {
     position: relative;
     vertical-align: middle;
@@ -224,19 +135,4 @@ h1, h2, h3, h4, h5, h6 {
         width 0.25s ease-out,
         height 0.25s ease-out 0.25s;
 }
-
-
-.mainContent {     
-    /*background: linear-gradient(90deg, #79938d, #496368);*/
-    background: #121212;
-    min-height: 89vh;
-    padding-top: var(--gap);
-    padding-bottom: var(--gap);
-    color: white;
-}
-
-.mainContent a {
-    color: white;
-    border-color: white;
-}
-
+/* End Category Button Animation */

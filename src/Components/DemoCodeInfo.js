@@ -2,28 +2,28 @@ import React from 'react'
 import styled from 'styled-components'
 
 const Container = styled.div`
-display: flex;
-flex-wrap: wrap;
-justify-content: center;
-margin: 15px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 15px 0;
 `
 
 const Button = styled.div`
-border: 2px solid #3C403D;
-/*border: 1px solid #e1e4e8;*/
-height: 60px;
-width: 110px;
-margin: 0 5px;
-display: inline-flex;
-justify-content: center;
-align-items: center;
-color: #3C403D;
-font-size: larger;
-font-weight: 600;
+    border: 2px solid #3C403D;
+    /*border: 1px solid #e1e4e8;*/
+    height: 60px;
+    width: 110px;
+    margin: 0 5px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: #3C403D;
+    font-size: larger;
+    font-weight: 600;
 
-&:hover {
-    background: #f6f8fa;
-}
+    &:hover {
+        background: #f6f8fa;
+    }
 `
 
 

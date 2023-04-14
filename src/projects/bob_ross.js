@@ -6,18 +6,16 @@ import ProjectImages from '../Components/ProjectImages'
 import DemoCodeLinks from '../Components/DemoCodeInfo'
 import styled from 'styled-components'
 import YoutubeEmbed from '../Components/YoutubeEmbed'
+import StyledMain, { ProjectInfo } from '../Components/UtilityComponents'
 
-const StyledMain = styled.div`
-    padding-top: var(--gap);
-`
 
 function BobRoss() {
     return (
-        <StyledMain className={"mainContent"}>
+        <StyledMain>
             <BackButton top />
             <ProjectTitle title={"3D PAINTING - BOB ROSS"} subtitle={"University project created spring 2020"} />
 
-            <div className="projectInfo">
+            <ProjectInfo>
                 <h2>SUMMARY</h2>
                 <p>
                     The Bob Ross 3D painting was a 5-man group project made in Blender for ththe course '3-D Computer Graphics' (TNM061). In this project we were to explore 
@@ -44,7 +42,7 @@ function BobRoss() {
                     source2={'../images/bob_ross/water.png'} description2={'Rendered water in test scene.'}/>
 
                 <BackButton />
-            </div>
+            </ProjectInfo>
         </StyledMain>
 
     );

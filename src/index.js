@@ -3,13 +3,13 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter} from 'react-router-dom';
 import ScrollToTop from './Components/ScrollToTop';
 
 
 ReactDOM.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basemname={`/${process.env.PUBLIC_URL}`}>
       <ScrollToTop />
       <App />
     </BrowserRouter>

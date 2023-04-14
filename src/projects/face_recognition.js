@@ -5,18 +5,16 @@ import ProjectImage from '../Components/ProjectImage'
 import ProjectImages from '../Components/ProjectImages'
 import DemoCodeLinks from '../Components/DemoCodeInfo'
 import styled from 'styled-components'
+import StyledMain, { ProjectInfo } from '../Components/UtilityComponents'
 
-const StyledMain = styled.div`
-    padding-top: var(--gap);
-`
 
 function FaceRecognition() {
     return (
-        <StyledMain className={"mainContent"}>
+        <StyledMain>
             <BackButton top />
             <ProjectTitle title={"FACE RECOGNITION"} subtitle={"University project created fall 2021"} />
 
-            <div className="projectInfo">
+            <ProjectInfo>
                 <h2>SUMMARY</h2>
                 <p>
 
@@ -29,7 +27,7 @@ function FaceRecognition() {
                 <h3>Fisherfaces</h3>
                 <ProjectImage source={'../images/face_recognition/fisherfaces.png'} description={''}/>
                 <BackButton />
-            </div>
+            </ProjectInfo>
         </StyledMain>
 
     );

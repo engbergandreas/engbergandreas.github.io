@@ -25,10 +25,6 @@ import GlobalIllumination from './projects/global_illumination'
 import BobRoss from './projects/bob_ross';
 
 
-
-
-
-
 /* 
 Olive: #A3BCB6
 
@@ -78,15 +74,11 @@ function App() {
         <Route path="/projects/facial_recognition" component={FaceRecognition}></Route>
         <Route path="/projects/bobross" component={BobRoss}></Route>
 
-
-
-
-
         <Route path="/projects">
           <Projects selectedCat={selectedCategory} onClickFunction={onSelectedCategoryChange} projects={projectsToShow} />
         </Route>
         <Route path="/about" component={About}></Route>
-        <Route exact path="/" component={Home}></Route>
+        <Route exact path='' component={Home}></Route>
         <Route component={Error} />
 
       </Switch>

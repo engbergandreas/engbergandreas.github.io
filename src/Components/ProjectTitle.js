@@ -1,17 +1,27 @@
 import React from 'react'
 import styled from 'styled-components'
 
-const StyledH1 = styled.h1 `
-    font-size: 3.5em;
-    line-height: 0.9em;
-` 
+const StyledTitle = styled.div `
+    text-align: center;
+    margin: 5vh 0;
+
+    & h1 {
+        font-size: 3.5em;
+        line-height: 0.9em;
+        margin: 0;
+    }
+
+    & h2 {
+        margin: 0;
+    }
+`
 
 function ProjectTitle({title, subtitle}) {
     return (
-        <div className="projectTitleInfo">
-            <StyledH1> {title} </StyledH1>
+        <StyledTitle>
+            <h1> {title} </h1>
             <h2> {subtitle} </h2>
-        </div>
+        </StyledTitle>
     );
 }
 
