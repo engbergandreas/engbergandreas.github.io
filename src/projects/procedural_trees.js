@@ -17,10 +17,7 @@ function ProceduralTrees() {
 
             <ProjectInfo>
                 <h2>SUMMARY</h2>
-                <p>Here is some great info about this project and perhaps a small summary of what the project
-                    is all about. After this perhaps an image or two would be a good idea. I will also need
-                    to come up with some more info so that this paragrahp actually has some length.
-                </p>
+                
                 <ProjectImage source={'../images/procedural_trees/result.png'} description={'Procedural trees generated'} />
                 <DemoCodeLinks code="https://github.com/engbergandreas/ProceduralGeneratedTrees"></DemoCodeLinks>
 

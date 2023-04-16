@@ -8,7 +8,8 @@ import styled from 'styled-components'
 import DemoVideo from '../Components/DemoVideo'
 import QuickInfo from '../Components/QuickInfo'
 import StyledMain, { ProjectInfo } from '../Components/UtilityComponents'
-
+import ReferenceLink from '../Components/ReferenceLink'
+import YoutubeEmbed from '../Components/YoutubeEmbed'
 
 function ExampleProject() {
     return (
@@ -22,16 +23,21 @@ function ExampleProject() {
                 <h2>SUMMARY</h2>
                 <p>
                     Table Raid is a gesture based VR game created in 'Media Technology - Bachelor Project TNM094' at Linköpings University
-                    during 12 weeks by a group of 5 people. The main focus of the course was to create a larger project and gain experience
+                    during 12 weeks by a group of 5 people <ReferenceLink reference={"https://www.linkedin.com/in/jonathan-andersson-43488a209/"} text={"Jonathan Andersson"}> </ReferenceLink> 
+                    , <ReferenceLink reference={"https://www.linkedin.com/in/wilma-axelsson-862b09177/"} text={"Wilma Axelsson"}></ReferenceLink>
+                    , <ReferenceLink reference={""} text={"Johanna Folde"}></ReferenceLink>
+                    , and <ReferenceLink reference={"https://www.linkedin.com/in/viktor-carlsson-6885b8164/"} text={"Viktor Carlsson"}></ReferenceLink>.
+                    
+                    The main focus of the course was to create a larger project and gain experience
                     in system development and agile development.
-
 
                     <br></br>
                     Ill present those parts of the project that I was most involved with which include general game design, VR integration, 
                     gesture recognition system, abilities system and the multiplayer aspect.
                     
                 </p>
-                <h2>Demo</h2>
+                <h2>Demo video</h2>
+                <YoutubeEmbed embedID={"XBPeDu6h5gk"}></YoutubeEmbed>
                 {/*<DemoVideo source={'../videos/DemoTableRaid.mp4'} videotype={"video/mp4"}></DemoVideo> */}
                 <DemoCodeLinks code="https://github.com/jonan270/gesture-based-game/tree/Beta2.0"></DemoCodeLinks>
 

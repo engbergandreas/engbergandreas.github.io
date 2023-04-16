@@ -6,7 +6,10 @@ import ProjectImages from '../Components/ProjectImages'
 import DemoCodeLinks from '../Components/DemoCodeInfo'
 import styled from 'styled-components'
 import StyledMain, { ProjectInfo } from '../Components/UtilityComponents'
-
+import YoutubeEmbed from '../Components/YoutubeEmbed'
+import { InlineMath, BlockMath } from 'react-katex'
+import QuickInfo from '../Components/QuickInfo'
+import ReferenceLink from '../Components/ReferenceLink'
 
 function ExampleProject() {
     return (
@@ -15,11 +18,17 @@ function ExampleProject() {
             <ProjectTitle title={"THIS IS PROJECT TITLE"} subtitle={"some info about creation date? or other small title"} />
 
             <ProjectInfo>
+                <QuickInfo typeinfo={["item 1", "item 2", "item 3"]}></QuickInfo>
                 <h2>SUMMARY</h2>
                 <p>
                     Here is some great info about this project and perhaps a small summary of what the project
                     is all about. After this perhaps an image or two would be a good idea. I will also need
                     to come up with some more info so that this paragrahp actually has some length.
+                    
+                    <br></br>
+                    This project was part of the course Global Illumination and Rendering (TNCG015) 
+                    at Linköping's University and was created by me and <ReferenceLink reference={"link to src"} text={"Text that is shown"}></ReferenceLink>. 
+                
                 </p>
 
                 <ProjectImage source={'../images/placeholder1024.png'} description={'Image description'} />
