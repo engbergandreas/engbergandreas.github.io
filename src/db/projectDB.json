@@ -1,5 +1,15 @@
 [
     {
+        "id": "interactive_canvas",
+        "title": "Interactive AI Canvas",
+        "backgroundURL": "/images/interactive_canvas/resultimg.png",
+        "categories": [
+            "programming",
+            "computer graphics",
+            "webb"
+        ]
+    },
+    {
         "id": "proceduralterrain",
         "title": "Procedural Generated Terrain",
         "backgroundURL": "/images/procedural_terrain/logo2.png",

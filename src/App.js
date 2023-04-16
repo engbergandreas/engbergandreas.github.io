@@ -22,8 +22,8 @@ import proceduralTrees from './projects/procedural_trees'
 import ColorMyWorld from './projects/color_my_world'
 import FaceRecognition from './projects/face_recognition'
 import GlobalIllumination from './projects/global_illumination'
-import BobRoss from './projects/bob_ross';
-
+import BobRoss from './projects/bob_ross'
+import InteractiveCanvas from './projects/interactive_canvas';
 
 /* 
 Olive: #A3BCB6
@@ -61,6 +61,7 @@ function App() {
         <Route path="/portfolio" component={Portfolio}></Route>
 
         {/*NEW PROJECT: Add new projects here, link must match project id */}
+        <Route path="/projects/interactive_canvas" component={InteractiveCanvas}></Route>
         <Route path="/projects/cloth_simulation" component={cloth}></Route>
         <Route path="/projects/table_raid" component={raid}></Route>
         <Route path="/projects/matkoma" component={matkoma}></Route>
